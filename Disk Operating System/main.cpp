@@ -9,7 +9,8 @@ using namespace std;
 #include"Prompt.h"
 
 
-int main() {
+int main() 
+{
 	prompt P;
 	P.run();
 	return 0;

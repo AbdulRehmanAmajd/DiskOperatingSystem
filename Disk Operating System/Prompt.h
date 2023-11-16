@@ -23,7 +23,7 @@ class prompt {
             parent = _parent;
         }
     };
-
+    //asjkdgshdshgsdksdghkasjh
     struct directory {
         std::string name;
         std::list<directory*> dir;

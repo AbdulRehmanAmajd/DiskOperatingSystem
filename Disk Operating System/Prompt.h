@@ -9,7 +9,7 @@ using namespace std;
 #include<queue>
 #include<fstream>
 
-
+//He HELLO THIS IS HASSAN BABAR WORKING ON DOS SHEELLLLLLLL
 class prompt {
     struct directory;
 
@@ -24,7 +24,7 @@ class prompt {
             parent = _parent;
         }
     };
-
+    //asjkdgshdshgsdksdghkasjh
     struct directory {
         std::string name;
         std::list<directory*> dir;

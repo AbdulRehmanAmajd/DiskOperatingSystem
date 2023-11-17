@@ -253,7 +253,7 @@ class prompt {
         ofstream Wtr("Save.txt");
         help_save(Wtr,root);
     }
-    //deeff
+    //deefft5
 public:
     prompt() {
         root = new directory("Dell");

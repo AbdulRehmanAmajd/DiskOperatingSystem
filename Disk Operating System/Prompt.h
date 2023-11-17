@@ -234,19 +234,13 @@ class prompt {
         std::cout << "VER: Displays the version of the program." << std::endl;
 
     }
-    void printDirectoryTree(directory* currentDirectory, string indent = "") {
-        std::cout << indent << currentDirectory->name << " (Dir)" << std::endl;
-        for (const auto& file : currentDirectory->f) {
-            std::cout << indent << "  |- " << file->name << " (File)" << std::endl;
-        }
-        for (const auto& subdirectory : currentDirectory->dir) {
-            printDirectoryTree(subdirectory, indent + "  ");
-        }
-    }
     void help_save(ofstream&Wtr, directory* currentDirectory, string indent = "") {
         if (currentDirectory != root)
         {
             Wtr << "(" << currentDirectory->parent->name << ")" << currentDirectory->name << endl;
+        }
+        else {
+            Wtr << currentDirectory->name << endl;
         }
         for (const auto& file : currentDirectory->f) {
             Wtr << "(" << currentDirectory->parent->name << ")" <<"+" << file->name << endl;

@@ -132,6 +132,9 @@
   <ItemGroup>
     <ClInclude Include="Prompt.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="Save.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
